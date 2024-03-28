@@ -55,18 +55,18 @@ onMounted(() => {
 		</section>
 
 		<section class="create-todo">
-			<h3>CREATE A TODO</h3>
-
+			<h3>CREATE YOUR TO-DO LIST</h3>
+<br>
 			<form id="new-todo-form" @submit.prevent="addTodo">
 				<h4>What's on your todo list?</h4>
 				<input 
 					type="text" 
 					name="content" 
 					id="content" 
-					placeholder="e.g. make a video"
+					placeholder="Enter your To-Do's here -- e.g. Complete Assignment"
 					v-model="input_content" />
 				
-				<h4>Pick a category</h4>
+				<h4>Select a category to which you want to add your To-Do's</h4>
 				<div class="options">
 
 					<label>
@@ -98,7 +98,7 @@ onMounted(() => {
 		</section>
 
 		<section class="todo-list">
-			<h3>TODO LIST</h3>
+			<h3>TO-DO LIST</h3>
 			<div class="list" id="todo-list">
 
 				<div v-for="todo in todos_asc" :class="`todo-item ${todo.done && 'done'}`">

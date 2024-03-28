@@ -1,4 +1,59 @@
-# Hello Vue!
+# Assignment 2 - To-Do List Using Vue
+
+# Introduction
+
+As a part of Assignemnt 2, I have created a To-Do Application using Vue.js. This application lets the user to enter the activities he wants to complete and this application keeps a record of it. 
+The user can view all the activities he has mentioned in the To-Do's in the To-Do List below.
+The user can click on the bullet button present beside the To-Do activity when he completed the task .The application will strike the 
+activity marking that the user has completed the task.
+
+The application also gives the feasability to the user to delete the task as well which would delete his to-do activity from the 
+list. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 [Vue](https://vuejs.org/) is a front end JavaScript framework for building user interfaces and single-page applications. [Vite](https://vitejs.dev/) is a powerful tool for building javascript apps that bundles all of your code and shows immediate changes while you're editing. We're big fans!
 
