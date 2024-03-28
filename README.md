@@ -56,6 +56,17 @@ Overall, Vue.js' combination of simplicity, performance, and a cohesive ecosyste
 # What resources did I read or watch or listen to?
 
 
+In the process of developing the application, I utilized a variety of resources to enhance my understanding and overcome challenges. Primarily, I watched YouTube videos of Tyler Potts, Traversy Media to gain insights into Vue.js development practices and techniques. 
+
+When faced with errors during development, I sought assistance on Stack Overflow, a platform where developers share their queries and receive answers from the community. Additionally, I extensively relied on Vue.js's official documentation available on vuejs.org to deepen my understanding of Vue.js syntax and features.
+
+To gain further insights into the application and get an idea of the how the user-interface should look like, I examined source codes on GitHub, studying interfaces and functionalities of similar projects. Integrating my own ideas with these, I iteratively refined the application's design and functionality.
+
+For a more structured learning experience, I leveraged resources such as CodePen, which provided practical examples and demonstrations to solidify my understanding of Vue.js concepts and syntax. For styling the To-Do Page, I frequently referenced W3Schools to ensure consistency and adherence to best practices in web design. At times, I utilized ChatGPT to assist in resolving errors and clarifying concepts, leveraging its vast knowledge base and problem-solving capabilities.
+
+Furthermore, I supplemented my learning by exploring educational platforms like freeCodeCamp and W3Schools, which offered comprehensive tutorials and guides on Vue.js development. By leveraging these diverse resources, I was able to effectively navigate challenges, deepen my understanding of Vue.js, and successfully develop the application.
+
+# Describe the site you built for this assignment. What does it do? What components or features of the framework did you explore for this project?
 
 
 
