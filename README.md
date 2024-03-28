@@ -68,6 +68,63 @@ Furthermore, I supplemented my learning by exploring educational platforms like 
 
 # Describe the site you built for this assignment. What does it do? What components or features of the framework did you explore for this project?
 
+## Description of the To-Do Application:
+
+ I developed a To-Do Application using Vue.js, facilitating users in managing their tasks efficiently. The application allows users to input activities they intend to accomplish, providing a convenient means of task organization. Users can access a comprehensive list of their To-Do activities, with the ability to mark tasks as complete by clicking on the bullet button, visually striking through the activity upon completion. Additionally, users have the option to delete tasks, removing them from the list altogether.
+
+## Components Used: 
+
+In implementing this functionality, I explored various components and features of the Vue.js framework:
+
+=> I utilized Vue instances to manage the application's reactivity and maintain state across components. This enabled seamless interaction between different parts of the application.
+=> 	I have used the following Vue directives in my application :
+
+1)	v-if - To impose  various conditions such as deleting the to-do activity in the to-list only if the user clicked on the delete button, add the activity to the list only when the user clicks on the Add button. 
+2)	v-for -  To traverse through various inputted tasks entered by the user and displaying it in the To-Do list.
+3)	v-bind – To maintain component connectivity.
+4)	v-on -  To listen to various DOM events like onClick etc. 
+
+This allowed for dynamic rendering of components and responsive user interactions.
+=> The template syntax was leveraged to construct the application's UI, integrating HTML syntax within Vue templates for straightforward implementation.
+
+=>	Furthermore, I also utilized the following Vue lifecycle hooks to manage component usestates :
+1)	– created:  The created hook initialized components, setting up initializations for  smooth operation.
+
+	 
+  <b> Ex:
+	const todos_asc = computed(() => todos.value.sort((a,b) =>{
+		return a.createdAt - b.createdAt
+  })) 
+  
+  The above code defines a computed property called `todos_asc`, sorting 	the `todos` array in ascending order based on each todo item's 	`createdAt` property. This guarantees that `todos_asc` consistently 	displays todos in chronological order of creation.
+</b>
+	
+  
+2)	 Onmounted:  The mounted hook executed actions such as adding and deleting tasks from the list upon button clicks.
+
+  <b>Ex: 
+		onMounted(() => {
+			name.value = localStorage.getItem('name') || ''
+			todos.value = JSON.parse(localStorage.getItem('todos')) 		|| []
+		})
+
+	In the above code, the `onMounted` hook initializes the `name` and 	`todos` values by retrieving them from the browser's `localStorage`, 	ensuring that the application loads the previously saved `name` and 	`todos` data when the component is mounted. If no data is found, it 	initializes the `name` value to an empty string and `todos` to an empty 	array.
+</b>
+
+  3.) -updated:  The updated hook facilitated re-rendering of components, allowing for code execution after DOM updates, crucial for managing user 		actions and maintaining application states.
+  
+  => Furthermore, I also employed Vue's watch and computed() properties to dynamically react to changes in data and compute derived data 			respectively, enhancing the application's reactivity and efficiency.
+	<b>
+  Ex:
+  watch(name, (newVal) => {
+	localStorage.setItem('name', newVal)
+	})
+
+  
+  In the above code, the `watch` function monitors changes to the `name` 	property and updates the corresponding value stored in the browser's 	`localStorage`, ensuring that it reflects the latest value of the `name` 	property .So that everytime when a user enters the to-do item the state 	will be updated and printed accordingly.
+</b>
+
+  By leveraging these Vue.js components and features, I was able to develop a 	robust and user-friendly To-Do Application, ensuring efficient task management 	for users.
 
 
 
@@ -100,36 +157,3 @@ Furthermore, I supplemented my learning by exploring educational platforms like 
 
 
 
-
-[Vue](https://vuejs.org/) is a front end JavaScript framework for building user interfaces and single-page applications. [Vite](https://vitejs.dev/) is a powerful tool for building javascript apps that bundles all of your code and shows immediate changes while you're editing. We're big fans!
-
-While you're in the editor working, Glitch is running your `start` script in the background (`vite dev`). The site will be in dev mode and you'll see your changes happen immediately in the preview window. Once you close the editor window and your app goes to sleep, Glitch runs the `build` script and Vite builds your app for modern browsers.
-
-## What's in this project?
-
-← `README.md`: That’s this file, where you can tell people what your cool website does and how you built it.
-
-← `index.html`: This is the main page template Vue uses to build your site. When you're ready to share it or add a custom domain, change SEO/meta settings in here.
-
-← `src/`: This folder contains all the files Vue will use to build your site.
-
-### Working in the `src/` folder 📁
-
-← `src/main.js`: This is the root file of the Vue app. If you install plugins (like `vue-router`), they need be specified in that file!
-
-← `src/App.vue`: The base for your Vue app, here is where the magic really happens. 
-
-← `src/public/`: Static assets should be placed in the `public` folder. The files put in the `public` folder will simply be copied into the built files. 
-
-← `src/assets/`: Media, such as images, can be placed in this folder.
-
-← `src/components/HelloWorld.vue`: A demo Vue component that uses the *new* Vue Composition API to create a simple working counter.
-
-All styles for this SPA can be found in `src/App.vue`.
-
-### Made by [@khalby786](https://khaleelgibran.com) for Glitch!
-
-[Glitch](https://glitch.com) is a friendly community where millions of people come together to build web apps and websites.
-
-- Need more help? [Check out our Help Center](https://help.glitch.com/) for answers to any common questions.
-- Ready to make it official? [Become a paid Glitch member](https://glitch.com/pricing) to boost your app with private sharing, more storage and memory, domains and more.
