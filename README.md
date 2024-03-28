@@ -91,31 +91,34 @@ This allowed for dynamic rendering of components and responsive user interaction
 1)	– created:  The created hook initialized components, setting up initializations for  smooth operation.
 
 	 
-  <b> Ex:
-	const todos_asc = computed(() => todos.value.sort((a,b) =>{
-		return a.createdAt - b.createdAt
-  })) 
+  <b> Ex: Inside App.vue in the script section I have used,
+	    const todos_asc = computed(() => todos.value.sort((a,b) =>{
+		      return a.createdAt - b.createdAt
+      })) 
   
   The above code defines a computed property called `todos_asc`, sorting 	the `todos` array in ascending order based on each todo item's 	`createdAt` property. This guarantees that `todos_asc` consistently 	displays todos in chronological order of creation.
 </b>
 	
+2) Onmounted:  The mounted hook executed actions such as adding and deleting tasks from the list upon button clicks.
+
+  <b>Ex: Inside App.vue in the script section I have used,
+		  onMounted(() => {
+			  name.value = localStorage.getItem('name') || ''
+			  todos.value = JSON.parse(localStorage.getItem('todos')) 		|| []
+		  })
   
-2)	 Onmounted:  The mounted hook executed actions such as adding and deleting tasks from the list upon button clicks.
+  In the above code, the `onMounted` hook initializes the `name` and 	`todos` values by retrieving them from the browser's `localStorage`, 	ensuring that the application loads the previously saved `name` and 	`todos` data when the component is mounted. If no data is found, it 	initializes the `name` value to an empty string and `todos` to an empty 	array.
 
-  <b>Ex: 
-		onMounted(() => {
-			name.value = localStorage.getItem('name') || ''
-			todos.value = JSON.parse(localStorage.getItem('todos')) 		|| []
-		})
-
-	In the above code, the `onMounted` hook initializes the `name` and 	`todos` values by retrieving them from the browser's `localStorage`, 	ensuring that the application loads the previously saved `name` and 	`todos` data when the component is mounted. If no data is found, it 	initializes the `name` value to an empty string and `todos` to an empty 	array.
+  
+      
 </b>
 
-  3.) -updated:  The updated hook facilitated re-rendering of components, allowing for code execution after DOM updates, crucial for managing user 		actions and maintaining application states.
+3.) -updated:  The updated hook facilitated re-rendering of components, allowing for code execution after DOM updates, crucial for managing user 		actions and maintaining application states.
   
-  => Furthermore, I also employed Vue's watch and computed() properties to dynamically react to changes in data and compute derived data 			respectively, enhancing the application's reactivity and efficiency.
-	<b>
-  Ex:
+=> Furthermore, I also employed Vue's watch and computed() properties to dynamically react to changes in data and compute derived data 			respectively, enhancing the application's reactivity and efficiency.
+	
+  <b>
+  Ex: Inside App.vue in the script section I have used,
   watch(name, (newVal) => {
 	localStorage.setItem('name', newVal)
 	})
@@ -124,7 +127,7 @@ This allowed for dynamic rendering of components and responsive user interaction
   In the above code, the `watch` function monitors changes to the `name` 	property and updates the corresponding value stored in the browser's 	`localStorage`, ensuring that it reflects the latest value of the `name` 	property .So that everytime when a user enters the to-do item the state 	will be updated and printed accordingly.
 </b>
 
-  By leveraging these Vue.js components and features, I was able to develop a 	robust and user-friendly To-Do Application, ensuring efficient task management 	for users.
+By leveraging these Vue.js components and features, I was able to develop a 	robust and user-friendly To-Do Application, ensuring efficient task management 	for users.
 
 
 
