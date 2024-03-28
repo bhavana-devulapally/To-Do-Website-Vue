@@ -2,13 +2,23 @@
 
 # Introduction
 
-As a part of Assignemnt 2, I have created a To-Do Application using Vue.js. This application lets the user to enter the activities he wants to complete and this application keeps a record of it. 
-The user can view all the activities he has mentioned in the To-Do's in the To-Do List below.
-The user can click on the bullet button present beside the To-Do activity when he completed the task .The application will strike the 
-activity marking that the user has completed the task.
+As part of Assignment 2, I've developed a To-Do Application utilizing Vue.js. This application empowers users to input activities they wish to accomplish, providing a convenient way to keep track of their tasks. Users can easily access a comprehensive list of their To-Do activities, displayed below.
 
-The application also gives the feasability to the user to delete the task as well which would delete his to-do activity from the 
-list. 
+A notable feature of the application is the ability for users to mark their tasks as complete by simply clicking on the bullet button adjacent to each activity. Upon completion, the application visually strikes through the activity, indicating that the task has been fulfilled.
+
+Additionally, users have the option to delete tasks, removing them from the list of To-Do activities altogether.
+
+# What framework did I pick and why?
+
+I chose to use the Vue.js framework for the development of my To-Do application due to its remarkable features and ease of use. Vue.js offers a seamless combination of script and template features, making it straightforward to develop applications. With Vue.js, I found it effortless to create understandable interfaces, which is essential for user-friendly applications.
+
+Upon research I found out that, Vue.js incorporates various performance optimization techniques, such as virtual DOM (VDOM) rendering and efficient update mechanisms. These optimizations minimize DOM manipulation and enhance application performance, resulting in faster rendering and improved user experience. 
+I have experienced it personally when I 
+One of the main reasons which I experienced personally that made me go for using Vue.js over other framework, such as React, is its template-centric approach. I initially attempted to build the To-Do application using React, but I found myself creating numerous components to handle different parts of the To-Do list. However, Vue.js provided me with the flexibility to consolidate all the code within a single file using template tags for markup and script tags for JavaScript logic. This approach simplified the development process immensely, allowing me to focus more on the functionality of the application rather than getting bogged down in component management.
+
+Vue.js offers seamless integration with other libraries and tools, allowing for greater flexibility and customization. Its progressive nature also means that it can be incrementally adopted into existing projects, making it a practical choice for a wide range of applications.
+
+In summary, Vue.js emerged as the ideal choice for my To-Do application due to its seamless integration of script and template features, simplified component creation, and overall developer-friendly ecosystem. Its efficiency and intuitiveness enabled me to create a robust and user-friendly application while minimizing development overhead.
 
 
 
