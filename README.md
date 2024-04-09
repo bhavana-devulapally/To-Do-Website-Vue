@@ -127,6 +127,59 @@ This allowed for dynamic rendering of components and responsive user interaction
   In the above code, the `watch` function monitors changes to the `name` 	property and updates the corresponding value stored in the browser's 	`localStorage`, ensuring that it reflects the latest value of the `name` 	property .So that everytime when a user enters the to-do item the state 	will be updated and printed accordingly.
 </b>
 
+
+## Referecnes and Citations: ##
+
+1) Tyler Potts. (2022, May 31). Build a Todo List App in Vue JS with LocalStorage in 2022 | Vue 3 for Beginners [Video]. YouTube. https://www.youtube.com/watch?v=qhjxAP1hFuI
+
+2) Traversy Media. (2023, November 8). Vue 3 & Composition API - Full project [Video]. YouTube. https://www.youtube.com/watch?v=hNPwdOZ3qFU
+
+3) Webpack “vue-loader” compilation issues with “@vue/compiler-sfc.” (n.d.). Stack Overflow. https://stackoverflow.com/questions/67399894/webpack-vue-loader-compilation-issues-with-vue-compiler-sfc
+
+4) Creating Vue application: vue create does not work. (n.d.). Stack Overflow. https://stackoverflow.com/questions/50731834/creating-vue-application-vue-create-does-not-work
+
+5) Vue.js. (n.d.). The Progressive JavaScript Framework | Vue.js. https://vuejs.org/
+
+6) Vue.js. (n.d.-b). https://vuejs.org/examples/#simple-component
+
+7) Vue.js. (n.d.-c). https://vuejs.org/examples/#fetching-data
+
+8) Vue.js. (n.d.-d). https://vuejs.org/examples/#grid
+
+9) Vue.js. (n.d.-e). https://vuejs.org/examples/#form-bindings
+
+10) Vue.js. (n.d.-f). https://vuejs.org/examples/#conditionals-and-loops
+
+11) Event handling — Vue.js. (n.d.). https://v2.vuejs.org/v2/guide/events
+
+12) Template Syntax — Vue.js. (n.d.). https://v2.vuejs.org/v2/guide/syntax
+
+13) The Vue instance — vue.js. (n.d.). https://v2.vuejs.org/v2/guide/instance
+
+14) Props — Vue.js. (n.d.). https://v2.vuejs.org/v2/guide/components-props
+
+15) Build software better, together. (n.d.). GitHub. https://github.com/topics/todo-list-project
+
+16) Guylil. (n.d.). GitHub - guylil/todo-list-vuejs: A simple todo list project in vuejs. GitHub. https://github.com/guylil/todo-list-vuejs
+
+17) Mdn. (n.d.). GitHub - mdn/todo-vue: Sample todo app built with the Vue framework. GitHub. https://github.com/mdn/todo-vue
+
+18) Apress. (n.d.). GitHub - Apress/pro-vue-js-2: Source Code for Pro Vue.js 2 by Adam Freeman. GitHub. https://github.com/Apress/pro-vue-js-2
+
+19) https://codepen.io/vuejs-examples/pen/WNYbaqo. (n.d.). CodePen.
+
+20) Vue.js to do. (n.d.). https://codepen.io/jackwalk/post/beginning-vue-js-on-codepen
+
+21) Vue tutorial. (n.d.). https://www.w3schools.com/vue/index.php
+
+22) Vue v-bind Directive. (n.d.). https://www.w3schools.com/vue/ref_v-bind.php
+
+23) Vue lifecycle hooks. (n.d.). https://www.w3schools.com/vue/vue_ref_lifecycle-hooks.php
+
+24) freeCodeCamp.org. (2018, July 2). Learn Vue.js in this free course! ?✨. https://www.freecodecamp.org/news/learn-vue-js-in-our-free-course-85d5df41e47f/
+
+
+
 By leveraging these Vue.js components and features, I was able to develop a 	robust and user-friendly To-Do Application, ensuring efficient task management 	for users.
 
 
